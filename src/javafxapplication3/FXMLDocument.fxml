@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication3.FXMLDocumentController">
+    <children>
+        <Button fx:id="button" layoutX="241.0" layoutY="161.0" onAction="#handleButtonAction" text="Click Me!" />
+        <Label fx:id="label" layoutX="14.0" layoutY="165.0" minHeight="16" minWidth="69" />
+      <CheckBox fx:id="checkbox1" layoutX="28.0" layoutY="34.0" mnemonicParsing="false" onAction="#handleCheckBox1" text="Notepad" />
+      <CheckBox fx:id="checkbox2" layoutX="28.0" layoutY="75.0" mnemonicParsing="false" onAction="#handleCheckBox2" text="Notepad++" />
+      <RadioButton fx:id="rdBtn1" layoutX="19.0" layoutY="113.0" mnemonicParsing="false" onAction="#handleRbBtn1" selected="true" text="mstsc">
+         <toggleGroup>
+            <ToggleGroup fx:id="group" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rdBtn2" layoutX="19.0" layoutY="144.0" mnemonicParsing="false" onAction="#handleRbBtn2" text="explorer" toggleGroup="$group" />
+    </children>
+</AnchorPane>
